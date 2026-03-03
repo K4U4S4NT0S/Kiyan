@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   --azul-Claro: #157B95;
   --azul-Escuro: #0E4F62;
   --branco: #FFFFFF;
-  --preto: #000000
+  --preto: #000000;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 :root {
-  font-family: Montserrat Family; 
-  line-height: 1.5;
+  font-family: 'Montserrat'; 
   font-weight: bold;
   background-color: var(--branco) ;
   color: var(--azul-Escuro);
