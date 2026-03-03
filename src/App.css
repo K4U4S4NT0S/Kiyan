@@ -1,4 +1,4 @@
-*{
+* {
   list-style: none;
   text-decoration: none;
 }
@@ -7,47 +7,51 @@ a:visited {
   color: var(--azul-Escuro);
 }
 
-nav{
- display: flex;
- justify-content: space-around;
- align-items: center;
- height: 5rem;
- }
-
-.logo{
-  width: 100px;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  position: fixed;
+  width: 100%;
 }
 
-ul{
+.logo {
+  width: 10rem;
+}
+
+ul {
   display: flex;
   flex-direction: row;
   padding: 0;
 }
 
-.menu > ul > li{
+.menu > ul > li {
   padding: 1rem;
 }
 
-.faleConosco:hover{
+.faleConosco:hover {
   text-decoration: underline;
   text-decoration-color: var(--azul-Escuro);
 }
 
-main{
+main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
+  justify-content: center;
   gap: 10rem;
 }
 
-.textoApresentacao{
+.textoApresentacao {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
@@ -55,12 +59,12 @@ main{
   align-items: center;
 }
 
-.textoApresentacao > h1{
+.textoApresentacao > h1 {
   font-size: 5.2rem;
   color: var(--azul-Claro);
 }
 
-.btn{
+.btn {
   background-color: var(--azul-Claro);
   width: 15rem;
   height: 2rem;
@@ -71,12 +75,72 @@ main{
   justify-content: center;
 }
 
-.btn > a{
-    color: var(--branco);
+.btn > a {
+  color: var(--branco);
 }
 
-.cor{
+.cor {
   background-color: var(--azul-Claro);
+  padding: 3rem;
 }
 
+.imagePredio{
+  display: flex;
+  justify-content: end;
+}
 
+.textoSobre {
+  color: var(--branco);
+  text-align: center;
+}
+
+.textoSobre > h2 {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.vidro {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.692);
+  padding: 1.5rem 2rem;
+  color: var(--branco);
+}
+
+.paragrafoSobre > p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.cor > .verMais{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.btnVerMais {
+  background-color: var(--branco);
+  width: 10rem;
+  height: 2rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnVerMais > a {
+  color: var(--azul-Claro);
+}
+
+.barrinha{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corBarrinha{
+  width: 25rem;
+  height: 1.5rem;
+  padding: 0;
+}

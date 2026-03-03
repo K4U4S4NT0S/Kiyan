@@ -6,7 +6,7 @@ import apresentacao from "./assets/apresentacao.png";
 function App() {
   return (
     <>
-      <nav>
+      <nav className="vidro">
         <div>
           <img className="logo" src={logo} alt="Logo Kiyan" />
         </div>
@@ -53,7 +53,41 @@ function App() {
 
         <div className="cor">
           <div className="container">
-            
+            <div className="imagePredio">
+              <img src={predio} alt="" />
+            </div>
+            <div className="textoSobre">
+              <h2>Segurança em suas mãos</h2>
+              <div className="paragrafoSobre vidro">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, illum? Excepturi quod aspernatur rerum consectetur
+                  velit? Ad similique totam culpa vitae ut aliquid nihil quas
+                  repudiandae, unde ex nostrum soluta!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, illum? Excepturi quod aspernatur rerum consectetur
+                  velit? Ad similique totam culpa vitae ut aliquid nihil quas
+                  repudiandae, unde ex nostrum soluta!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, illum? Excepturi quod aspernatur rerum consectetur
+                  velit? Ad similique totam culpa vitae ut aliquid nihil quas
+                  repudiandae, unde ex nostrum soluta!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="verMais">
+            <div className="btnVerMais">
+              <a href="#">Ver Mais &gt; </a>
+            </div>
+          </div>
+          <div className="barrinha">
+            <div className="corBarrinha vidro">
+            </div>
           </div>
         </div>
       </main>
