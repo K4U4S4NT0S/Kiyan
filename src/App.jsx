@@ -2,6 +2,7 @@ import "./App.css";
 import logo from "./assets/logo.png";
 import predio from "./assets/fotoPredio.png";
 import apresentacao from "./assets/apresentacao.png";
+import produtos from "./assets/produtos.png";
 
 function App() {
   return (
@@ -86,9 +87,27 @@ function App() {
             </div>
           </div>
           <div className="barrinha">
-            <div className="corBarrinha vidro">
-            </div>
+            <div className="corBarrinha vidro"></div>
           </div>
+        </div>
+        <div className="produtos">
+          <img src={produtos} alt="" />
+          <h1>PerfectDrill</h1>
+          <div className="vidro textoProdutos">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              dolor distinctio repudiandae molestiae totam nulla, voluptates
+              impedit necessitatibus ipsam iste exercitationem enim omnis
+              quibusdam officia, aliquam quod eius nihil tempore?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+              dolor distinctio repudiandae molestiae totam nulla, voluptates
+              impedit necessitatibus ipsam iste exercitationem enim omnis
+              quibusdam officia, aliquam quod eius nihil tempore?
+            </p>
+          </div>
+            <div className="corBarrinha2"></div>
         </div>
       </main>
     </>

@@ -3,6 +3,13 @@
   text-decoration: none;
 }
 
+.vidro {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.692);
+  padding: 1.5rem 2rem;
+}
+
 a:visited {
   color: var(--azul-Escuro);
 }
@@ -14,6 +21,7 @@ nav {
   height: 3rem;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .logo {
@@ -99,13 +107,8 @@ main {
   font-size: 2.2rem;
 }
 
-.vidro {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.692);
-  padding: 1.5rem 2rem;
-  color: var(--branco);
+.paragrafoSobre{
+border-radius: 16px;
 }
 
 .paragrafoSobre > p:not(:last-child) {
@@ -143,4 +146,32 @@ main {
   width: 25rem;
   height: 1.5rem;
   padding: 0;
+  border-radius: 16px;
+}
+
+.produtos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textoProdutos{
+  color: var(--azul-Escuro);
+  background-color: #157b9540;
+  width: 50%;
+  border-radius: 16px;
+}
+
+.textoProdutos > p{
+  margin-bottom: 1rem;
+}
+
+.corBarrinha2{
+  background-color: #157b9540;
+  width: 25rem;
+  height: 1.5rem;
+  border-radius: 16px;
+  margin: 2rem;
+  
 }
