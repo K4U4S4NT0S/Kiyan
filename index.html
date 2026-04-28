@@ -1,196 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kiyan – Precisão que Salva Vidas</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiyan – Precisão que Salva Vidas</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/logo-simbolo.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/sections.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-</head>
-<body>
-  <div id="cur"></div>
-  <div id="cur-r"></div>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div id="cur"></div>
+    <div id="cur-r"></div>
 
-  <nav id="nav" class="navbar">
-    <a href="#hero" class="nav-logo">
-      <img src="assets/images/logo.png" alt="Kiyan" />
-    </a>
+    <nav id="nav" class="navbar">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/images/logo.png" alt="Kiyan" />
+      </a>
 
-    <ul class="nav-menu">
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#services">Serviços</a></li>
-      <li><a href="#products">Produtos</a></li>
-      <li><a href="#contact">Contato</a></li>
-    </ul>
+      <ul class="nav-menu">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
 
-    <a href="#contact" class="btn btn-primary">Fale Conosco</a>
-  </nav>
+      <a href="#contact" class="btn btn-primary">Fale Conosco</a>
+    </nav>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="hero-shape"></div>
-      <div class="hero-pattern"></div>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-shape"></div>
+        <div class="hero-pattern"></div>
 
-      <div class="hero-content">
-        <div class="section-tag hero-tag">
-          <span></span> Inovação em Neurocirurgia
-        </div>
-
-        <h1 class="hero-title">
-          Precisão<br />que <em>salva</em><br /><strong>vidas</strong>
-        </h1>
-
-        <p class="hero-text">
-          Desenvolvemos soluções cirúrgicas de alta performance reconhecidas em mais de 40 países.
-          Tecnologia brasileira com padrão internacional.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#products" class="btn btn-primary">Conheça os produtos</a>
-          <a href="#about" class="btn btn-outline">Nossa história</a>
-        </div>
-      </div>
-
-      <img class="hero-image" src="assets/images/produto-hero.png" alt="Produtos Kiyan" />
-
-      <div class="scroll-indicator">
-        <div></div>
-        <span>Scroll para explorar</span>
-      </div>
-    </section>
-
-    <section id="stats" class="stats">
-      <div class="stats-grid">
-        <article class="stat-card reveal"><span class="stat-number" data-target="35">0</span><p>Anos de experiência</p></article>
-        <article class="stat-card reveal delay-1"><span class="stat-number" data-target="40">0</span><p>Países atendidos</p></article>
-        <article class="stat-card reveal delay-2"><span class="stat-number" data-target="500">0</span><p>Cirurgiões atendidos</p></article>
-        <article class="stat-card reveal delay-3"><span class="stat-number" data-target="98">0</span><p>% satisfação clientes</p></article>
-      </div>
-    </section>
-
-    <div class="marquee">
-      <div class="marquee-track">
-        <div class="marquee-content">Precisão Cirúrgica <span></span> Inovação Brasileira <span></span> ISO 13485 <span></span> ANVISA Certificada <span></span> FDA Aprovada <span></span> CE Mark <span></span> 40+ Países <span></span></div>
-        <div class="marquee-content">Precisão Cirúrgica <span></span> Inovação Brasileira <span></span> ISO 13485 <span></span> ANVISA Certificada <span></span> FDA Aprovada <span></span> CE Mark <span></span> 40+ Países <span></span></div>
-      </div>
-    </div>
-
-    <section id="about" class="section about">
-      <div class="container about-grid">
-        <div class="about-media reveal">
-          <div class="about-border"></div>
-          <div class="about-image-box">
-            <img src="assets/images/sobre.png" alt="Equipamento Kiyan" />
+        <div class="hero-content">
+          <div class="section-tag hero-tag">
+            <span></span> Inovação em Neurocirurgia
           </div>
-          <div class="about-badge"><strong>35+</strong> anos de inovação</div>
-        </div>
 
-        <div class="about-content">
-          <div class="section-tag reveal"><span></span> Sobre a Kiyan</div>
-          <h2 class="section-title reveal delay-1">Tecnologia brasileira com <strong>padrão internacional</strong></h2>
-          <p class="section-text reveal delay-2">
-            Atuamos no desenvolvimento de soluções cirúrgicas de precisão, unindo engenharia, segurança e inovação para apoiar profissionais da saúde em procedimentos complexos.
+          <h1 class="hero-title">
+            Precisão<br />que <em>salva</em><br /><strong>vidas</strong>
+          </h1>
+
+          <p class="hero-text">
+            Desenvolvemos soluções cirúrgicas de alta performance reconhecidas
+            em mais de 40 países. Tecnologia brasileira com padrão
+            internacional.
           </p>
 
-          <div class="feature-grid reveal delay-3">
-            <article class="feature-card"><h4>Qualidade</h4><p>Processos focados em segurança e alta performance.</p></article>
-            <article class="feature-card"><h4>Inovação</h4><p>Produtos pensados para evolução cirúrgica.</p></article>
-            <article class="feature-card"><h4>Precisão</h4><p>Detalhes técnicos que fazem diferença no procedimento.</p></article>
-            <article class="feature-card"><h4>Confiança</h4><p>Reconhecimento em dezenas de países.</p></article>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Conheça os produtos</a>
+            <a href="#about" class="btn btn-outline">Nossa história</a>
+          </div>
+        </div>
+
+        <img
+          class="hero-image"
+          src="assets/images/produto-hero.png"
+          alt="Produtos Kiyan"
+        />
+
+        <div class="scroll-indicator">
+          <div></div>
+        </div>
+      </section>
+
+      <section id="stats" class="stats">
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <span class="stat-number" data-target="35">0</span>
+            <p>Anos de experiência</p>
+          </article>
+          <article class="stat-card reveal delay-1">
+            <span class="stat-number" data-target="40">0</span>
+            <p>Países atendidos</p>
+          </article>
+          <article class="stat-card reveal delay-2">
+            <span class="stat-number" data-target="500">0</span>
+            <p>Cirurgiões atendidos</p>
+          </article>
+          <article class="stat-card reveal delay-3">
+            <span class="stat-number" data-target="98">0</span>
+            <p>% satisfação clientes</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            Precisão Cirúrgica <span></span> Inovação Brasileira
+            <span></span> ISO 13485 <span></span> ANVISA Certificada
+            <span></span> FDA Aprovada <span></span> CE Mark <span></span> 40+
+            Países <span></span>
+          </div>
+          <div class="marquee-content">
+            Precisão Cirúrgica <span></span> Inovação Brasileira
+            <span></span> ISO 13485 <span></span> ANVISA Certificada
+            <span></span> FDA Aprovada <span></span> CE Mark <span></span> 40+
+            Países <span></span>
           </div>
         </div>
       </div>
-    </section>
 
-    <section id="services" class="section services">
-      <div class="container">
-        <div class="section-header">
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <div class="about-media reveal">
+            <div class="about-border"></div>
+            <div class="about-image-box">
+              <img src="assets/images/sobre.png" alt="Equipamento Kiyan" />
+            </div>
+            <div class="about-badge"><strong>35+</strong> anos de inovação</div>
+          </div>
+
+          <div class="about-content">
+            <div class="section-tag reveal"><span></span> Sobre a Kiyan</div>
+            <h2 class="section-title reveal delay-1">
+              Tecnologia brasileira com <strong>padrão internacional</strong>
+            </h2>
+            <p class="section-text reveal delay-2">
+              Atuamos no desenvolvimento de soluções cirúrgicas de precisão,
+              unindo engenharia, segurança e inovação para apoiar profissionais
+              da saúde em procedimentos complexos.
+            </p>
+
+            <div class="feature-grid reveal delay-3">
+              <article class="feature-card">
+                <h4>Qualidade</h4>
+                <p>Processos focados em segurança e alta performance.</p>
+              </article>
+              <article class="feature-card">
+                <h4>Inovação</h4>
+                <p>Produtos pensados para evolução cirúrgica.</p>
+              </article>
+              <article class="feature-card">
+                <h4>Precisão</h4>
+                <p>Detalhes técnicos que fazem diferença no procedimento.</p>
+              </article>
+              <article class="feature-card">
+                <h4>Confiança</h4>
+                <p>Reconhecimento em dezenas de países.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-tag reveal"><span></span> Serviços</div>
+              <h2 class="section-title reveal delay-1">
+                Soluções para diferentes
+                <strong>necessidades cirúrgicas</strong>
+              </h2>
+            </div>
+            <p class="section-text reveal delay-2">
+              Do desenvolvimento técnico ao suporte especializado, entregamos
+              soluções completas para instituições e cirurgiões.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <span>01</span>
+              <div class="service-icon">⚙️</div>
+              <h3>Equipamentos Cirúrgicos</h3>
+              <p>
+                Alta performance, precisão e segurança para procedimentos
+                complexos.
+              </p>
+              <a href="#contact">Saiba mais →</a>
+            </article>
+            <article class="service-card reveal delay-1">
+              <span>02</span>
+              <div class="service-icon">🧠</div>
+              <h3>Neurocirurgia</h3>
+              <p>Soluções especializadas para aplicações neurocirúrgicas.</p>
+              <a href="#contact">Saiba mais →</a>
+            </article>
+            <article class="service-card reveal delay-2">
+              <span>03</span>
+              <div class="service-icon">🛠️</div>
+              <h3>Suporte Técnico</h3>
+              <p>
+                Atendimento consultivo para uso, manutenção e orientação
+                técnica.
+              </p>
+              <a href="#contact">Saiba mais →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section products">
+        <div class="container section-header products-header">
           <div>
-            <div class="section-tag reveal"><span></span> Serviços</div>
-            <h2 class="section-title reveal delay-1">Soluções para diferentes <strong>necessidades cirúrgicas</strong></h2>
+            <div class="section-tag reveal"><span></span> Produtos</div>
+            <h2 class="section-title reveal delay-1">
+              Linha de produtos <strong>Kiyan</strong>
+            </h2>
           </div>
-          <p class="section-text reveal delay-2">Do desenvolvimento técnico ao suporte especializado, entregamos soluções completas para instituições e cirurgiões.</p>
+          <p class="section-text reveal delay-2">
+            Conheça soluções desenvolvidas para precisão, controle e segurança.
+          </p>
         </div>
 
-        <div class="services-grid">
-          <article class="service-card reveal"><span>01</span><div class="service-icon">⚙️</div><h3>Equipamentos Cirúrgicos</h3><p>Alta performance, precisão e segurança para procedimentos complexos.</p><a href="#contact">Saiba mais →</a></article>
-          <article class="service-card reveal delay-1"><span>02</span><div class="service-icon">🧠</div><h3>Neurocirurgia</h3><p>Soluções especializadas para aplicações neurocirúrgicas.</p><a href="#contact">Saiba mais →</a></article>
-          <article class="service-card reveal delay-2"><span>03</span><div class="service-icon">🛠️</div><h3>Suporte Técnico</h3><p>Atendimento consultivo para uso, manutenção e orientação técnica.</p><a href="#contact">Saiba mais →</a></article>
-        </div>
-      </div>
-    </section>
+        <div class="products-track">
 
-    <section id="products" class="section products">
-      <div class="container section-header products-header">
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="assets/images/easydrill.png" alt="EasyDrill" />
+              <span>EasyDrill</span>
+            </div>
+            <div class="product-body">
+              <small>KY-01 · Sistema</small>
+              <h3>EasyDrill Pro</h3>
+              <p>Perfuração precisa e segurança em cada detalhe.</p>
+              <a href="#contact">Conheça o produto →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-1">
+            <div class="product-image">
+              <img src="assets/images/spinedrill.png" alt="SpineDrill" />
+              <span class="danger">Lançamento </span>
+            </div>
+            <div class="product-body">
+              <small>SD-05 · Espinal</small>
+              <h3>SpineDrill</h3>
+              <p>
+                Nova linha para procedimentos espinais com tecnologia de ponta.
+              </p>
+              <a href="#contact">Conheça o produto →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2">
+            <div class="product-image">
+              <img src="assets/images/produto.png" alt="Produto Kiyan" />
+              <span>Kiyan</span>
+            </div>
+            <div class="product-body">
+              <small>KY-02 · Precisão</small>
+              <h3>Kiyan Surgical</h3>
+              <p>Solução robusta para procedimentos de alta complexidade.</p>
+              <a href="#contact">Conheça o produto →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2">
+            <div class="product-image">
+              <img src="assets/images/produto.png" alt="Produto Kiyan" />
+              <span>Kiyan</span>
+            </div>
+            <div class="product-body">
+              <small>KY-02 · Precisão</small>
+              <h3>Kiyan Surgical</h3>
+              <p>Solução robusta para procedimentos de alta complexidade.</p>
+              <a href="#contact">Conheça o produto →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2">
+            <div class="product-image">
+              <img src="assets/images/produto.png" alt="Produto Kiyan" />
+              <span>Kiyan</span>
+            </div>
+            <div class="product-body">
+              <small>KY-02 · Precisão</small>
+              <h3>Kiyan Surgical</h3>
+              <p>Solução robusta para procedimentos de alta complexidade.</p>
+              <a href="#contact">Conheça o produto →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2">
+            <div class="product-image">
+              <img src="assets/images/produto.png" alt="Produto Kiyan" />
+              <span>Kiyan</span>
+            </div>
+            <div class="product-body">
+              <small>KY-02 · Precisão</small>
+              <h3>Kiyan Surgical</h3>
+              <p>Solução robusta para procedimentos de alta complexidade.</p>
+              <a href="#contact">Conheça o produto →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal delay-2">
+            <div class="product-image">
+              <img src="assets/images/produto.png" alt="Produto Kiyan" />
+              <span>Kiyan</span>
+            </div>
+            <div class="product-body">
+              <small>KY-02 · Precisão</small>
+              <h3>Kiyan Surgical</h3>
+              <p>Solução robusta para procedimentos de alta complexidade.</p>
+              <a href="#contact">Conheça o produto →</a>
+            </div>
+          </article>
+          
+
+        </div>
+      </section>
+
+      <section id="banner" class="banner">
+        <div class="banner-bg" id="bannerBg"></div>
+        <div class="banner-pattern"></div>
+        <div class="banner-content">
+          <h2 class="reveal">KIYAN</h2>
+          <p class="reveal delay-1">
+            Onde cada milímetro define a diferença entre o sucesso e o risco
+          </p>
+          <a href="#contact" class="btn btn-primary reveal delay-2">
+            Entre em contato
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-tag reveal"><span></span> Fale conosco</div>
+            <h2 class="section-title reveal delay-1">
+              Vamos criar<br /><strong>algo juntos</strong>
+            </h2>
+            <p class="section-text reveal delay-2">
+              Nossa equipe técnica está pronta para entender suas necessidades e
+              apresentar a solução ideal.
+            </p>
+
+            <div class="contact-info reveal delay-3">
+              <div>
+                <span>📍</span>
+                <p><strong>Localização</strong>São Paulo, Brasil</p>
+              </div>
+              <div>
+                <span>✉️</span>
+                <p><strong>E-mail</strong>contato@kiyan.com.br</p>
+              </div>
+              <div>
+                <span>📞</span>
+                <p><strong>Telefone</strong>+55 (11) 99999-9999</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal delay-2" action="https://formsubmit.co/your@email.com" method="POST">
+            <div class="form-row">
+              <label>
+                Nome
+                <input type="text" placeholder="Seu nome" name="name" required/>
+              </label>
+              <label>
+                E-mail
+                <input type="email" placeholder="seu@email.com" name="email" required />
+              </label>
+            </div>
+            <label>
+              Assunto
+              <input type="text" placeholder="Como podemos ajudar?"/>
+            </label>
+            <label>
+              Mensagem
+              <textarea placeholder="Escreva sua mensagem"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">
+              Enviar mensagem
+            </button>
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
         <div>
-          <div class="section-tag reveal"><span></span> Produtos</div>
-          <h2 class="section-title reveal delay-1">Linha de produtos <strong>Kiyan</strong></h2>
+          <h3>Kiyan</h3>
+          <p>
+            Precisão, tecnologia e inovação para soluções cirúrgicas de alta
+            performance.
+          </p>
         </div>
-        <p class="section-text reveal delay-2">Conheça soluções desenvolvidas para precisão, controle e segurança.</p>
-      </div>
-
-      <div class="products-track">
-        <article class="product-card reveal"><div class="product-image"><img src="assets/images/easydrill.png" alt="EasyDrill" /><span>EasyDrill</span></div><div class="product-body"><small>KY-01 · Sistema</small><h3>EasyDrill Pro</h3><p>Perfuração precisa e segurança em cada detalhe.</p><a href="#contact">Conheça o produto →</a></div></article>
-        <article class="product-card reveal delay-1"><div class="product-image"><img src="assets/images/spinedrill.png" alt="SpineDrill" /><span class="danger">Lançamento</span></div><div class="product-body"><small>SD-05 · Espinal</small><h3>SpineDrill</h3><p>Nova linha para procedimentos espinais com tecnologia de ponta.</p><a href="#contact">Conheça o produto →</a></div></article>
-        <article class="product-card reveal delay-2"><div class="product-image"><img src="assets/images/produto.png" alt="Produto Kiyan" /><span>Kiyan</span></div><div class="product-body"><small>KY-02 · Precisão</small><h3>Kiyan Surgical</h3><p>Solução robusta para procedimentos de alta complexidade.</p><a href="#contact">Conheça o produto →</a></div></article>
-      </div>
-    </section>
-
-    <section id="banner" class="banner">
-      <div class="banner-bg" id="bannerBg"></div>
-      <div class="banner-pattern"></div>
-      <div class="banner-content">
-        <h2 class="reveal">KIYAN</h2>
-        <p class="reveal delay-1">Onde cada milímetro define a diferença entre o sucesso e o risco</p>
-        <a href="#contact" class="btn btn-primary reveal delay-2">Entre em contato</a>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container contact-grid">
         <div>
-          <div class="section-tag reveal"><span></span> Fale conosco</div>
-          <h2 class="section-title reveal delay-1">Vamos criar<br /><strong>algo juntos</strong></h2>
-          <p class="section-text reveal delay-2">Nossa equipe técnica está pronta para entender suas necessidades e apresentar a solução ideal.</p>
-
-          <div class="contact-info reveal delay-3">
-            <div><span>📍</span><p><strong>Localização</strong>São Paulo, Brasil</p></div>
-            <div><span>✉️</span><p><strong>E-mail</strong>contato@kiyan.com.br</p></div>
-            <div><span>📞</span><p><strong>Telefone</strong>+55 (11) 99999-9999</p></div>
-          </div>
+          <h4>Menu</h4>
+          <a href="#about">Sobre</a>
+          <a href="#services">Serviços</a>
+          <a href="#products">Produtos</a>
         </div>
-
-        <form class="contact-form reveal delay-2">
-          <div class="form-row">
-            <label>Nome<input type="text" placeholder="Seu nome" /></label>
-            <label>E-mail<input type="email" placeholder="seu@email.com" /></label>
-          </div>
-          <label>Assunto<input type="text" placeholder="Como podemos ajudar?" /></label>
-          <label>Mensagem<textarea placeholder="Escreva sua mensagem"></textarea></label>
-          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-        </form>
+        <div>
+          <h4>Contato</h4>
+          <a href="mailto:contato@kiyan.com.br">contato@kiyan.com.br</a>
+          <a href="#contact">Fale conosco</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
       </div>
-    </section>
-  </main>
+      <div class="container footer-bottom">
+        <p>© 2026 Kiyan. Todos os direitos reservados.</p>
+        <a href="#hero">Voltar ao topo</a>
+      </div>
+    </footer>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><h3>Kiyan</h3><p>Precisão, tecnologia e inovação para soluções cirúrgicas de alta performance.</p></div>
-      <div><h4>Menu</h4><a href="#about">Sobre</a><a href="#services">Serviços</a><a href="#products">Produtos</a></div>
-      <div><h4>Contato</h4><a href="mailto:contato@kiyan.com.br">contato@kiyan.com.br</a><a href="#contact">Fale conosco</a></div>
-      <div><h4>Social</h4><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
-    </div>
-    <div class="container footer-bottom"><p>© 2026 Kiyan. Todos os direitos reservados.</p><a href="#hero">Voltar ao topo</a></div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -1,27 +1,84 @@
 @media (max-width: 1024px) {
-  .container { width: min(100% - 60px, 1280px); }
-  .navbar, .navbar.scrolled { padding-inline: 30px; }
-  .hero-content { padding: 140px 30px 80px; }
-  .hero-image { width: 46%; }
-  .section { padding: 80px 0; }
-  .about-grid, .section-header, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-  .services-grid { grid-template-columns: 1fr 1fr; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
-  .products-track { padding-inline: 30px; }
+  .container {
+    width: min(100% - 60px, 1280px);
+  }
+  .navbar,
+  .navbar.scrolled {
+    padding-inline: 30px;
+  }
+  .hero-content {
+    padding: 140px 30px 80px;
+  }
+  .hero-image {
+    width: 46%;
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .about-grid,
+  .section-header,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .products-track {
+    padding-inline: 30px;
+  }
 }
 @media (max-width: 768px) {
-  body { cursor: auto; }
-  #cur, #cur-r { display: none; }
-  .container { width: min(100% - 36px, 1280px); }
-  .navbar { padding-inline: 18px; }
-  .nav-menu { display: none; }
-  .navbar .btn-primary { padding: 10px 14px; font-size: 9px; }
-  .hero-title { font-size: 40px; }
-  .hero-image { display: none; }
-  .hero-shape { width: 80%; }
-  .scroll-indicator { left: 30px; }
-  .services-grid, .form-row, .footer-grid, .feature-grid { grid-template-columns: 1fr; }
-  .stats-grid { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; gap: 12px; }
+  body {
+    cursor: auto;
+  }
+  #cur,
+  #cur-r {
+    display: none;
+  }
+  .container {
+    width: min(100% - 36px, 1280px);
+  }
+  .navbar {
+    padding-inline: 18px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .navbar .btn-primary {
+    padding: 10px 14px;
+    font-size: 9px;
+  }
+  .hero-title {
+    font-size: 40px;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-shape {
+    width: 80%;
+  }
+  .scroll-indicator {
+    left: 30px;
+  }
+  .services-grid,
+  .form-row,
+  .footer-grid,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
