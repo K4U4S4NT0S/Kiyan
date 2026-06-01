@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiyan – Precisão que Salva Vidas</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo-simbolo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/sections.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/modals.css" />
+  </head>
+  <body>
+    <div id="cur"></div>
+    <div id="cur-r"></div>
+
+    <!-- MODAL OVERLAY -->
+    <div id="modal-overlay" class="modal-overlay" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modal-close" aria-label="Fechar">
+          <span></span><span></span>
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <nav id="nav" class="navbar">
+      <a href="#hero" class="nav-logo">
+        <img src="./assets/images/logo.png" alt="Kiyan" />
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#banner">Certificações</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Fale Conosco</a>
+    </nav>
+
+    <main>
+      <section id="hero" class="hero hero-drill-home" data-selected-color="azul">
+        <div class="home-glow"></div>
+        <div class="hero-content hero-drill-copy">
+          <div class="section-tag hero-tag"><span></span> Inovação em neurocirurgia</div>
+          <h1 class="hero-title">Precisão<br />que <em>salva</em><br /><strong>vidas</strong></h1>
+          <p class="hero-text" id="homeVariationDescription">Brocas cirúrgicas de alta performance, desenvolvidas para oferecer segurança, controle e precisão em cada milímetro.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Conheça os produtos</a>
+            <a href="#about" class="btn btn-outline">Nossa história</a>
+          </div>
+
+          <div class="home-variation-box">
+            <p>Selecione a variação</p>
+            <div class="home-color-buttons" aria-label="Selecionar cor da broca">
+              <button type="button" class="home-color-btn active" data-drill-color="azul"><span class="dot dot-blue"></span>Azul</button>
+              <button type="button" class="home-color-btn" data-drill-color="verde"><span class="dot dot-green"></span>Verde</button>
+              <button type="button" class="home-color-btn" data-drill-color="vermelho"><span class="dot dot-red"></span>Vermelho</button>
+              <button type="button" class="home-color-btn" data-drill-color="dourado"><span class="dot dot-gold"></span>Dourado</button>
+            </div>
+          </div>
+
+          <div class="hero-cert-row">
+            <div><strong>ANVISA✓</strong><span>Certificado</span></div>
+            <div><strong>+10 anos</strong><span>No mercado</span></div>
+            <div><strong id="homeVariationMm">8 mm</strong><span id="homeVariationName">Broca Azul</span></div>
+          </div>
+        </div>
+
+        <div class="drill-stage" aria-label="Três variações da Perfect Drill">
+          <button type="button" class="drill-option active" data-drill-color="azul">
+            <img src="./assets/images/broca-azul.png" alt="PerfectDrill Azul 8mm" />
+          </button>
+          <button type="button" class="drill-option" data-drill-color="verde">
+            <img src="./assets/images/broca-verde.png" alt="PerfectDrill Verde 12mm" />
+          </button>
+          <button type="button" class="drill-option" data-drill-color="vermelho">
+            <img src="./assets/images/broca-vermelha.png" alt="PerfectDrill Vermelha 10mm" />
+          </button>
+          <button type="button" class="drill-option" data-drill-color="dourado">
+            <img src="./assets/images/broca-dourada.png" alt="PerfectDrill Dourada 14mm" />
+          </button>
+        </div>
+      </section>
+
+      <section id="stats" class="stats">
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <span class="stat-number" data-target="35">0</span>
+            <p>Anos de experiência</p>
+          </article>
+          <article class="stat-card reveal delay-1">
+            <span class="stat-number" data-target="40">0</span>
+            <p>Países atendidos</p>
+          </article>
+          <article class="stat-card reveal delay-2">
+            <span class="stat-number" data-target="500">0</span>
+            <p>Cirurgiões atendidos</p>
+          </article>
+          <article class="stat-card reveal delay-3">
+            <span class="stat-number" data-target="98">0</span>
+            <p>% satisfação clientes</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            Precisão Cirúrgica <span></span> Inovação Brasileira
+            <span></span> ISO 13485 <span></span> ANVISA Certificada
+            <span></span> FDA Aprovada <span></span> CE Mark <span></span> 40+
+            Países <span></span>
+          </div>
+          <div class="marquee-content">
+            Precisão Cirúrgica <span></span> Inovação Brasileira
+            <span></span> ISO 13485 <span></span> ANVISA Certificada
+            <span></span> FDA Aprovada <span></span> CE Mark <span></span> 40+
+            Países <span></span>
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <div class="about-media reveal">
+            <div class="about-border"></div>
+            <div class="about-image-box">
+              <img src="./assets/images/sobre.png" alt="Equipamento Kiyan" />
+            </div>
+            <div class="about-badge"><strong>35+</strong> anos de inovação</div>
+          </div>
+          <div class="about-content">
+            <div class="section-tag reveal"><span></span> Sobre a Kiyan</div>
+            <h2 class="section-title reveal delay-1">
+              Tecnologia brasileira com <strong>padrão internacional</strong>
+            </h2>
+            <p class="section-text reveal delay-2">
+              Atuamos no desenvolvimento de soluções cirúrgicas de precisão,
+              unindo engenharia, segurança e inovação para apoiar profissionais
+              da saúde em procedimentos complexos.
+            </p>
+            <div class="feature-grid reveal delay-3">
+              <article class="feature-card">
+                <h4>Qualidade</h4>
+                <p>Processos focados em segurança e alta performance.</p>
+              </article>
+              <article class="feature-card">
+                <h4>Inovação</h4>
+                <p>Produtos pensados para evolução cirúrgica.</p>
+              </article>
+              <article class="feature-card">
+                <h4>Precisão</h4>
+                <p>Detalhes técnicos que fazem diferença no procedimento.</p>
+              </article>
+              <article class="feature-card">
+                <h4>Confiança</h4>
+                <p>Reconhecimento em dezenas de países.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="services" class="section services">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-tag reveal"><span></span> Serviços</div>
+              <h2 class="section-title reveal delay-1">
+                Soluções para diferentes <strong>necessidades cirúrgicas</strong>
+              </h2>
+            </div>
+            <p class="section-text reveal delay-2">
+              Do desenvolvimento técnico ao suporte especializado, entregamos
+              soluções completas para instituições e cirurgiões.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <span>01</span>
+              <div class="service-icon">01</div>
+              <h3>Equipamentos Cirúrgicos</h3>
+              <p>Alta performance, precisão e segurança para procedimentos complexos.</p>
+              <a href="#" class="service-saiba-mais" data-service="equipamentos">Saiba mais →</a>
+            </article>
+            <article class="service-card reveal delay-1">
+              <span>02</span>
+              <div class="service-icon">02</div>
+              <h3>Neurocirurgia</h3>
+              <p>Soluções especializadas para aplicações neurocirúrgicas.</p>
+              <a href="#" class="service-saiba-mais" data-service="neurocirurgia">Saiba mais →</a>
+            </article>
+            <article class="service-card reveal delay-2">
+              <span>03</span>
+              <div class="service-icon">03</div>
+              <h3>Suporte Técnico</h3>
+              <p>Atendimento consultivo para uso, manutenção e orientação técnica.</p>
+              <a href="#" class="service-saiba-mais" data-service="suporte">Saiba mais →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUTOS -->
+      <section id="products" class="section products products-drill" data-product-color="dourado">
+        <div class="container section-header drill-products-header">
+          <div>
+            <div class="section-tag reveal"><span></span> Produtos individuais</div>
+            <h2 class="section-title reveal delay-1">Perfect<strong>Drill</strong></h2>
+          </div>
+          <p class="section-text reveal delay-2">Linha PerfectDrill com variações por cor, milimetragem e aplicação. Selecione uma broca para visualizar os detalhes técnicos com uma transição suave.</p>
+        </div>
+
+        <div class="container individual-product-wrap">
+          <article class="product-device-card reveal">
+            <div class="device-dots"><span class="dot dot-blue"></span><span class="dot dot-gold"></span><span class="dot dot-green"></span></div>
+            <div class="product-drill-image-area">
+              <img id="individualProductImage" src="./assets/images/broca-dourada.png" alt="Broca PerfectDrill Dourada" />
+            </div>
+            <div class="product-card-footer">
+              <div class="section-tag"><span></span> Broca Engates — Neurologia</div>
+              <h3 id="individualProductTitle">Perfect<strong>Drill</strong> Dourada</h3>
+              <p id="individualProductText">Variação dourada indicada para perfuração cranial com controle e precisão.</p>
+              <button type="button" class="btn btn-primary drill-info-trigger" data-open-drill-info>Obtenha mais informações →</button>
+            </div>
+          </article>
+
+          <aside class="product-info-panel reveal delay-1">
+            <small>Variação selecionada</small>
+            <h3 id="productInfoName">Dourado · 14 mm</h3>
+            <p id="productInfoDescription">Broca desenvolvida para procedimentos que exigem maior alcance, mantendo estabilidade e segurança no manuseio.</p>
+
+            <div class="mm-display">
+              <span>Milimetragem</span>
+              <strong id="productInfoMm">14 mm</strong>
+            </div>
+
+            <div class="product-variation-buttons">
+              <button type="button" class="product-color-btn" data-product-color="azul"><span class="dot dot-blue"></span>Azul <strong>8 mm</strong></button>
+              <button type="button" class="product-color-btn" data-product-color="verde"><span class="dot dot-green"></span>Verde <strong>12 mm</strong></button>
+              <button type="button" class="product-color-btn" data-product-color="vermelho"><span class="dot dot-red"></span>Vermelho <strong>10 mm</strong></button>
+              <button type="button" class="product-color-btn active" data-product-color="dourado"><span class="dot dot-gold"></span>Dourado <strong>14 mm</strong></button>
+            </div>
+
+            <div class="spec-grid product-specs" id="individualProductSpecs">
+              <div><span>Categoria</span><strong>Neurocirurgia</strong></div>
+              <div><span>Cor</span><strong>Dourado</strong></div>
+              <div><span>Diâmetro</span><strong>14 mm</strong></div>
+              <div><span>Aplicação</span><strong>Perfuração cranial</strong></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="banner" class="banner">
+        <div class="banner-bg" id="bannerBg"></div>
+        <div class="banner-pattern"></div>
+        <div class="banner-content">
+          <h2 class="reveal">KIYAN</h2>
+          <p class="reveal delay-1">
+            Onde cada milímetro define a diferença entre o sucesso e o risco
+          </p>
+          <a href="#contact" class="btn btn-primary reveal delay-2">Entre em contato</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-tag reveal"><span></span> Fale conosco</div>
+            <h2 class="section-title reveal delay-1">
+              Vamos criar<br /><strong>algo juntos</strong>
+            </h2>
+            <p class="section-text reveal delay-2">
+              Nossa equipe técnica está pronta para entender suas necessidades e
+              apresentar a solução ideal.
+            </p>
+            <div class="contact-info reveal delay-3">
+              <div>
+                <span></span>
+                <p><strong>Localização</strong>São Paulo, Brasil</p>
+              </div>
+              <div>
+                <span></span>
+                <p><strong>E-mail</strong>contato@kiyan.com.br</p>
+              </div>
+              <div>
+                <span></span>
+                <p><strong>Telefone</strong>+55 (11) 99999-9999</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form reveal delay-2" action="https://formsubmit.co/your@email.com" method="POST">
+            <div class="form-row">
+              <label>
+                Nome
+                <input type="text" placeholder="Seu nome" name="name" required/>
+              </label>
+              <label>
+                E-mail
+                <input type="email" placeholder="seu@email.com" name="email" required />
+              </label>
+            </div>
+            <label>
+              Assunto
+              <input type="text" placeholder="Como podemos ajudar?"/>
+            </label>
+            <label>
+              Mensagem
+              <textarea placeholder="Escreva sua mensagem"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Kiyan</h3>
+          <p>Precisão, tecnologia e inovação para soluções cirúrgicas de alta performance.</p>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <a href="#about">Sobre</a>
+          <a href="#services">Serviços</a>
+          <a href="#products">Produtos</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a href="mailto:contato@kiyan.com.br">contato@kiyan.com.br</a>
+          <a href="#contact">Fale conosco</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2026 Kiyan. Todos os direitos reservados.</p>
+        <a href="#hero">Voltar ao topo</a>
+      </div>
+    </footer>
+
+    <script src="./js/site-data.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/modals.js"></script>
+  </body>
+</html>

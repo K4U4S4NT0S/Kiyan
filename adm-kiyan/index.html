@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador Kiyan</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo-simbolo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+
+    <section id="loginScreen" class="login-screen" aria-label="Login administrativo">
+      <form id="loginForm" class="login-card" autocomplete="off">
+        <div class="login-brand">
+          <img src="../assets/images/logo-simbolo.png" alt="Kiyan" />
+          <div>
+            <strong>Kiyan Admin</strong>
+            <span>Acesso restrito</span>
+          </div>
+        </div>
+
+        <div class="login-copy">
+          <h1>Entrar no painel</h1>
+          <p>Informe usuário e senha para acessar a área administrativa.</p>
+        </div>
+
+        <div class="field">
+          <label for="loginUser">Usuário</label>
+          <input id="loginUser" type="text" placeholder="Digite o usuário" required />
+        </div>
+
+        <div class="field">
+          <label for="loginPassword">Senha</label>
+          <input id="loginPassword" type="password" placeholder="Digite a senha" required />
+        </div>
+
+        <button class="btn-admin primary login-button" type="submit">Entrar</button>
+        <p id="loginError" class="login-error" role="alert"></p>
+
+        <div class="login-hint">
+          <strong>Acesso padrão:</strong> admin / admin123
+        </div>
+      </form>
+    </section>
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <div class="admin-logo">
+          <img src="../assets/images/logo-simbolo.png" alt="Kiyan" />
+          <div>
+            <strong>Kiyan Admin</strong>
+            <span>Painel local</span>
+          </div>
+        </div>
+
+        <nav class="admin-nav" aria-label="Menu administrador">
+          <button class="active" data-tab="geral">Geral</button>
+          <button data-tab="produtos">Produtos</button>
+          <button data-tab="servicos">Serviços</button>
+          <button data-tab="backup">Backup</button>
+          <button data-tab="preview">Preview</button>
+        </nav>
+
+        <div class="admin-sidebar-actions">
+          <button id="saveAll" class="btn-admin primary">Salvar alterações</button>
+          <a class="btn-admin" href="../index.html" target="_blank">Abrir site</a>
+          <button id="resetAll" class="btn-admin danger">Restaurar padrão</button>
+        </div>
+      </aside>
+
+      <main class="admin-main">
+        <header class="admin-topbar">
+          <div>
+            <h1>Administrador do site</h1>
+            <p>Edite textos, produtos, serviços e informações da empresa. As alterações ficam salvas no navegador via localStorage e aparecem no site principal.</p>
+          </div>
+          <div class="topbar-actions">
+            <button id="exportJsonTop" class="btn-admin success">Exportar JSON</button>
+            <button id="logoutAdmin" class="btn-admin danger">Sair</button>
+          </div>
+        </header>
+
+        <section id="tab-geral" class="admin-section active">
+          <div class="admin-card">
+            <div class="section-head">
+              <div>
+                <h2>Conteúdo geral</h2>
+                <p>Altere hero, sobre a empresa, chamadas e contato.</p>
+              </div>
+            </div>
+            <div id="generalEditor" class="editor-list"></div>
+          </div>
+        </section>
+
+        <section id="tab-produtos" class="admin-section">
+          <div class="admin-card">
+            <div class="section-head">
+              <div>
+                <h2>Produtos</h2>
+                <p>Edite os cards e a aba “Conheça o produto”.</p>
+              </div>
+              <button id="addProduct" class="btn-admin primary">Adicionar produto</button>
+            </div>
+            <div id="productsEditor" class="editor-list"></div>
+          </div>
+        </section>
+
+        <section id="tab-servicos" class="admin-section">
+          <div class="admin-card">
+            <div class="section-head">
+              <div>
+                <h2>Serviços</h2>
+                <p>Edite os cards e a aba “Saiba mais”.</p>
+              </div>
+              <button id="addService" class="btn-admin primary">Adicionar serviço</button>
+            </div>
+            <div id="servicesEditor" class="editor-list"></div>
+          </div>
+        </section>
+
+        <section id="tab-backup" class="admin-section">
+          <div class="admin-card">
+            <div class="section-head">
+              <div>
+                <h2>Backup e edição avançada</h2>
+                <p>Copie, edite ou importe o JSON completo do conteúdo.</p>
+              </div>
+              <div class="array-tools">
+                <button id="exportJson" class="btn-admin success">Exportar</button>
+                <button id="importJson" class="btn-admin primary">Importar</button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="jsonEditor">JSON do conteúdo</label>
+              <textarea id="jsonEditor" class="json-box"></textarea>
+              <small>Use com cuidado: erro de vírgula ou aspas pode impedir a importação.</small>
+            </div>
+          </div>
+        </section>
+
+        <section id="tab-preview" class="admin-section">
+          <div class="admin-card">
+            <div class="section-head">
+              <div>
+                <h2>Preview</h2>
+                <p>Salve e recarregue para visualizar as mudanças no site.</p>
+              </div>
+              <button id="reloadPreview" class="btn-admin primary">Recarregar preview</button>
+            </div>
+            <iframe id="previewFrame" class="preview-frame" src="../index.html"></iframe>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast">Salvo com sucesso!</div>
+
+    <script src="../js/site-data.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
