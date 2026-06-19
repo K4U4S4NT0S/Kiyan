@@ -1,0 +1,12 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #157b95;
+  --blue-dark: #0e4f62;
+  --blue-light: #d4ecf3;
+  --gray-1: #f4f7f9;
+  --gray-2: #e4ecef;
+  --gray-4: #9aacb5;
+  --gray-6: #5a7080;
+  --shadow: 0 20px 55px rgba(14, 79, 98, .12);
+}
